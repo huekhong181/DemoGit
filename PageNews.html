@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" http-equiv="content-language" content="vi">
+		<title>Learn HTML, CSS, JavaScript</title>
+		<script type="text/javascript">
+			function myfunct(){
+				alert("WELCOME TO ICT NEWS");
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="pageNews.css">
+	</head>
+	
+	<body>
+		<div class="header">
+			<div id="logo">
+				<a href="#">
+					<img class="hidden-xs" src="logo.png" alt="ITC News">
+				</a>
+			</div>
+			<div id="searchbtn">
+				<table cellpadding="0px" cellspacing="0px"> 
+					<tr> 
+						<td id="td1">
+							<input type="text" name="zoom_query" placeholder="Tìm kiếm"> 
+						</td>
+						<td id="td2"> 
+							<button><img src="searchbutton.gif"<input type="button" value=""></button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#" title="Trang chủ"><img class="icon" src="menu-home.png"></a></li>
+					<li><a onclick="myfunct()" href="#"> Home Page </a></li>
+					<li><a href="#"> Tin Tức </a>
+						<ul class="sub-menu">
+							<li><a href="#">Tin tức 1</a></li>
+							<li><a href="#">Tin tức 2</a></li>
+							<li><a href="#">Tin tức 3</a></li>
+						</ul>
+					</li>
+					<li><a href="news.html"> Thêm bài </a>
+						<ul class="sub-menu">
+							<li><a href="#">Bài viết 1</a></li>
+							<li><a href="#">Bài viết 2</a></li>
+							<li><a href="#">Bài viết 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#"> CNTT </a>
+						<ul class="sub-menu">
+							<li><a href="#">CNTT1</a></li>
+							<li><a href="#">CNTT2</a></li>
+							<li><a href="#">CNTT3</a></li>
+						</ul>
+					</li>
+					<li><a href="#"> Kinh Doanh </a></li>
+					<li><a href="#"> Thế giới số </a></li>
+					<li><a href="#"> Game </a></li>
+					<li><a href="#"> Khởi nghiệp </a></li>
+					<li><a href="#">Công nghệ</a></li>
+					<li><a href="#"> Video </a></li>
+				</ul>					
+			</div>			
+		</div>
+		<div class="content">
+			
+		</div>
+	</body>
+</html>

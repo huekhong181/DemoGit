@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learn HTML, CSS, JavaScript</title>
+		<link rel="stylesheet" type="text/css" href="pageNews1.css">		
+		<script src="pageNews.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div id="header">
+				<form style="text-align: center">
+					<h2> NỘI DUNG BÀI VIẾT </h2>
+				</form>
+			</div>
+			<div id="menu">
+				<form id="content" action="#" method="POST">
+					<table>
+						<tr>
+							<td> Tên bài viết </td>
+							<td><input size="46" type="text" placeholder="Nhập tên bài viết" name="docName"></td>							
+						</tr>
+						<tr><td></td><td><i id="checkName" style="color:red;"></i></td></tr>
+						<tr>
+							<td> Liên kết tĩnh </td>
+							<td></td>
+						</tr>
+						<tr>
+							<td> Nội dung bài viết </td>
+							<td><textarea name="Area" cols="55" rows="6" placeholder="  Nhập nội dung bài viết, chứa ít nhất 200 kí tự"></textarea>
+						</tr>
+						<tr><td></td><td><i id="checkArea" style="color:red;"></i></td></tr>
+						<tr>
+							<td> Lịch đăng </td>
+							<td>
+								<input type="radio" name="lich_dang" value = "Đăng ngay">Đăng ngay
+								<input type="radio" name="lich_dang" value = "Đặt lịch">Đặt lịch
+								<input type="datetime-local" name="dateTime" id="dateTime">
+							</td>
+						</tr>	<br>					
+						<tr>
+							<td colspan="2">
+								<input  type="submit" name="btnok" onclick="return validateForm(content)"  value="Đăng bài"> &nbsp &nbsp &nbsp &nbsp
+								<input type="reset" name="btnreset" value="Nhập lại"> 						
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="menu1">
+				<form id="content1" action="#" method="POST">
+					<h4> THÔNG TIN BỔ SUNG </h4>
+					<table>
+						<tr>
+							<td><label> Email liên hệ </label></td>
+							<td><input size="25" type="email" placeholder="Nhập email liên hệ" name="email"></td>
+						</tr>
+						<tr><td></td><td><i id="checkMail" style="color:red;"></i></td></tr>
+						<tr>
+							<td> Số điện thoại </td>
+							<td><input size="20" type="number" placeholder="Nhập số điện thoại" name="phone"></td>
+						</tr>
+						<tr>
+							<td> Thẻ đánh dấu </td>
+							<td><input size="20" type="text1"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" name="btnok" onclick="return validateMail(content1)" value="Thêm"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
